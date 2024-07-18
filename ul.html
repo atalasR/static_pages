@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表展示页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .list-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+        }
+
+        ul {
+            column-count: 6; /* Number of columns */
+            column-gap: 20px; /* Gap between columns */
+            list-style-type: disc;
+            padding-left: 40px; /* Ensure the list starts with proper indentation */
+        }
+
+        li {
+            break-inside: avoid; /* Prevents item from breaking between columns */
+            margin-bottom: 10px; /* Space between each list item */
+        }
+    </style>
+</head>
+<body>
+    <div class="list-container">
+        <h2>列表展示</h2>
+        <ul>
+            <li>列表项 1</li>
+            <li>列表项 2</li>
+            <li>列表项 3</li>
+            <li>列表项 3</li>
+            <li>列表项 3</li>
+            <li>列表项 3</li>
+            <li>列表项 3</li>
+         
+        </ul>
+    </div>
+</body>
+</html>
