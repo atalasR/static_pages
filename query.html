@@ -6,48 +6,13 @@
     <title>查询页面</title>
     <style>
         body {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 100vh;form-group
-            margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
-        }
-
-        .header, .footer {
-            background-color: #007BFF;
-            color: white;
-            padding: 10px 20px;
+            margin: 0;
+            padding: 20px;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
-        }
-
-        .header .logo {
-            font-size: 1.5em;
-        }
-
-        .header .user-info {
-            display: flex;
-            align-items: center;
-        }
-
-        .header .user-info span {
-            margin-right: 15px;
-        }
-
-        .header .user-info button {
-            padding: 5px 10px;
-            background-color: #dc3545;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            color: white;
-        }
-
-        .header .user-info button:hover {
-            background-color: #c82333;
         }
 
         .query-container {
@@ -56,14 +21,10 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 80%;
-            text-align: center;
-            margin: 0 auto;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
         }
 
         h2 {
+            text-align: center;
             margin-bottom: 20px;
         }
 
@@ -74,40 +35,34 @@
         }
 
         .form-group {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-            width: 24%;
-        }
-
-        .form-group.full-width {
-            width: 100%;
+            margin-bottom: 15px;
+            width: 19%;
         }
 
         label {
-            margin-right: 5px;
-            flex: 1;
-            text-align: left;
+            display: inline-block;
+            margin-bottom: 5px;
+            font-weight: bold;
         }
 
-        input {
+        input, select {
+            width: 100%;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            flex: 2;
-            width: 100%; /* Adjust input width to control its length */
+            box-sizing: border-box;
         }
 
         .button-container {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             width: 100%;
             margin-top: 20px;
+            gap: 20px;
         }
 
         button {
-            padding: 10px;
-            width: 48%;
+            padding: 10px 20px;
             color: white;
             border: none;
             border-radius: 5px;
@@ -130,30 +85,28 @@
             background-color: #c82333;
         }
 
-        .footer a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
+        .download-button {
+            background-color: #28a745;
         }
 
-        .footer a:hover {
-            text-decoration: underline;
+        .download-button:hover {
+            background-color: #218838;
+        }
+
+        .fetch-button {
+            background-color: #ffc107;
+        }
+
+        .fetch-button:hover {
+            background-color: #e0a800;
         }
     </style>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">Logo</div>
-        <div class="user-info">
-            <span>用户名</span>
-            <button>退出</button>
-        </div>
-    </header>
-
     <div class="query-container">
         <h2>查询</h2>
         <form>
-            <div class="form-group full-width">
+            <div class="form-group">
                 <label for="input1">输入框1:</label>
                 <input type="text" id="input1" name="input1" required>
             </div>
@@ -194,35 +147,52 @@
                 <input type="text" id="input10" name="input10" required>
             </div>
             <div class="form-group">
-                <label for="input11">输入框11:</label>
-                <input type="text" id="input11" name="input11" required>
+                <label for="select1">选择框1:</label>
+                <select id="select1" name="select1" required>
+                    <option value="">请选择</option>
+                    <option value="option1">选项1</option>
+                    <option value="option2">选项2</option>
+                </select>
             </div>
             <div class="form-group">
-                <label for="input12">输入框12:</label>
-                <input type="text" id="input12" name="input12" required>
+                <label for="select2">选择框2:</label>
+                <select id="select2" name="select2" required>
+                    <option value="">请选择</option>
+                    <option value="option1">选项1</option>
+                    <option value="option2">选项2</option>
+                </select>
             </div>
             <div class="form-group">
-                <label for="input13">输入框13:</label>
-                <input type="text" id="input13" name="input13" required>
+                <label for="select3">选择框3:</label>
+                <select id="select3" name="select3" required>
+                    <option value="">请选择</option>
+                    <option value="option1">选项1</option>
+                    <option value="option2">选项2</option>
+                </select>
             </div>
             <div class="form-group">
-                <label for="input14">输入框14:</label>
-                <input type="text" id="input14" name="input14" required>
+                <label for="select4">选择框4:</label>
+                <select id="select4" name="select4" required>
+                    <option value="">请选择</option>
+                    <option value="option1">选项1</option>
+                    <option value="option2">选项2</option>
+                </select>
             </div>
             <div class="form-group">
-                <label for="input15">输入框15:</label>
-                <input type="text" id="input15" name="input15" required>
+                <label for="select5">选择框5:</label>
+                <select id="select5" name="select5" required>
+                    <option value="">请选择</option>
+                    <option value="option1">选项1</option>
+                    <option value="option2">选项2</option>
+                </select>
             </div>
             <div class="button-container">
                 <button type="submit" class="query-button">查询</button>
                 <button type="reset" class="reset-button">重置</button>
+                <button type="button" class="download-button">下载</button>
+                <button type="button" class="fetch-button">获取</button>
             </div>
         </form>
     </div>
-
-    <footer class="footer">
-        <a href="https://www.google.com" target="_blank">Google</a>
-        <a href="https://www.github.com" target="_blank">GitHub</a>
-    </footer>
 </body>
 </html>
