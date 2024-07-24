@@ -9,10 +9,52 @@
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        header, footer {
+            width: 100%;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-info span {
+            margin-right: 10px;
+        }
+
+        .logout-button {
+            background-color: #dc3545;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            color: white;
+            cursor: pointer;
+        }
+
+        footer {
+            justify-content: center;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
         }
 
         .query-container {
@@ -21,6 +63,8 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 80%;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
         h2 {
@@ -103,6 +147,13 @@
     </style>
 </head>
 <body>
+    <header>
+        <img src="logo.png" alt="Logo">
+        <div class="user-info">
+            <span>用户名</span>
+            <button class="logout-button">退出</button>
+        </div>
+    </header>
     <div class="query-container">
         <h2>查询</h2>
         <form>
@@ -194,5 +245,9 @@
             </div>
         </form>
     </div>
+    <footer>
+        <a href="https://www.google.com" target="_blank">Google</a>
+        <a href="https://www.github.com" target="_blank">GitHub</a>
+    </footer>
 </body>
 </html>
