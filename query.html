@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>查询页面</title>
+    <!-- 引入 Select2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -199,42 +201,52 @@
             </div>
             <div class="form-group">
                 <label for="select1">选择框1:</label>
-                <select id="select1" name="select1" required>
-                    <option value="">请选择</option>
+                <select id="select1" name="select1" multiple="multiple">
                     <option value="option1">选项1</option>
                     <option value="option2">选项2</option>
+                    <option value="option3">选项3</option>
+                    <option value="option4">选项4</option>
+                    <option value="option5">选项5</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="select2">选择框2:</label>
-                <select id="select2" name="select2" required>
-                    <option value="">请选择</option>
+                <select id="select2" name="select2" multiple="multiple">
                     <option value="option1">选项1</option>
                     <option value="option2">选项2</option>
+                    <option value="option3">选项3</option>
+                    <option value="option4">选项4</option>
+                    <option value="option5">选项5</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="select3">选择框3:</label>
-                <select id="select3" name="select3" required>
-                    <option value="">请选择</option>
+                <select id="select3" name="select3" multiple="multiple">
                     <option value="option1">选项1</option>
                     <option value="option2">选项2</option>
+                    <option value="option3">选项3</option>
+                    <option value="option4">选项4</option>
+                    <option value="option5">选项5</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="select4">选择框4:</label>
-                <select id="select4" name="select4" required>
-                    <option value="">请选择</option>
+                <select id="select4" name="select4" multiple="multiple">
                     <option value="option1">选项1</option>
                     <option value="option2">选项2</option>
+                    <option value="option3">选项3</option>
+                    <option value="option4">选项4</option>
+                    <option value="option5">选项5</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="select5">选择框5:</label>
-                <select id="select5" name="select5" required>
-                    <option value="">请选择</option>
+                <select id="select5" name="select5" multiple="multiple">
                     <option value="option1">选项1</option>
                     <option value="option2">选项2</option>
+                    <option value="option3">选项3</option>
+                    <option value="option4">选项4</option>
+                    <option value="option5">选项5</option>
                 </select>
             </div>
             <div class="button-container">
@@ -249,5 +261,17 @@
         <a href="https://www.google.com" target="_blank">Google</a>
         <a href="https://www.github.com" target="_blank">GitHub</a>
     </footer>
+
+    <!-- 引入 jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- 引入 Select2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#select1, #select2, #select3, #select4, #select5').select2({
+                placeholder: "请选择选项"
+            });
+        });
+    </script>
 </body>
 </html>
